@@ -124,5 +124,9 @@ If you feel so inclined, donations can be sent to myself via PayPal donate@Frien
 
 Original code base by Patrix87. Trigger Generator by Second_Coming. Taunus triggers by yukihito23. Chernobyl Zone (and Chernobyl Zone Autumn) triggers by lusu007. Stratis triggers by AKA Tony.
 
+## Special Mention
+
+Credit to DS/DP/RM/OMG/WTF/LOLBBQ for copying Exile code for database saving. Well done you!! Have a gold sticker!
+
 ## License
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)

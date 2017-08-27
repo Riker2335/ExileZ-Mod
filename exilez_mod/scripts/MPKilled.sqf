@@ -44,6 +44,7 @@ if (EZM_ExplosiveZombies) then
 EZM_aliveZombies = EZM_aliveZombies - [_unit];
 
 // Add to Dead Zombie Monitor
+_unit setVariable ["ZedKilledAt", diag_tickTime];
 EZM_deadZombies pushback _unit;
 
 if (EZM_ExtendedLogging) then

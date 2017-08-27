@@ -14,17 +14,21 @@ if (EZM_ExtendedLogging) then
 {
 	_zombie = _x;
 	_zombieClass = typeOf _zombie;
-	_zombiePos = getPos _zombie;
+	_zombiePos = getPos _zombie;	
+	_killedAt = _zombie getVariable "ZedKilledAt";
 	
-	if ((isNull _zombie) || (!(alive _zombie))) then
+	if ((diag_tickTime - _killedAt) > EZM_MaxTimeDead) then
 	{
-		deleteVehicle _zombie;
-		EZM_deadZombies = EZM_deadZombies - [_zombie];
-		
-		if (EZM_ExtendedLogging) then
+		if ((isNull _zombie) || (!(alive _zombie))) then
 		{
-			diag_log format["ExileZ Mod: Removing 1 Probably dead Zombie	|	Position : %1	|	Class : %2",_zombiePos,_zombieClass];
-		};		
+			deleteVehicle _zombie;
+			EZM_deadZombies = EZM_deadZombies - [_zombie];
+			
+			if (EZM_ExtendedLogging) then
+			{
+				diag_log format["ExileZ Mod: Removing 1 Probably dead Zombie	|	Position : %1	|	Class : %2",_zombiePos,_zombieClass];
+			};		
+		};
 	};
 	
 }

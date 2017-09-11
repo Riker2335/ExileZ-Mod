@@ -14,8 +14,10 @@ if (EZM_ExtendedLogging) then
 {
 	_zombie = _x;
 	_zombieClass = typeOf _zombie;
-	_zombiePos = getPos _zombie;	
-	_killedAt = _zombie getVariable "ZedKilledAt";
+	_zombiePos = getPos _zombie;		
+	_killedAt = _zombie getVariable ["ZedKilledAt", diag_tickTime];
+	
+	//diag_log format["ExileZ Mod: Dead Zombie Killed at Variable	 : %1",_killedAt];
 	
 	if ((diag_tickTime - _killedAt) > EZM_MaxTimeDead) then
 	{

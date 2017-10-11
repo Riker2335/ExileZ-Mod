@@ -122,11 +122,13 @@ If you feel so inclined, donations can be sent to myself via PayPal donate@Frien
 
 ## Credits
 
-Original code base by Patrix87. Trigger Generator by Second_Coming. Taunus triggers by yukihito23. Chernobyl Zone (and Chernobyl Zone Autumn) triggers by lusu007. Stratis triggers by AKA Tony.
+Original code base by Patrix87. Trigger Generator by Second_Coming. Taunus and Chernarus Redux triggers by yukihito23. Chernobyl Zone (and Chernobyl Zone Autumn) triggers by lusu007. Stratis triggers by AKA Tony.
 
-## Special Mention
+## Special Mentions
 
 Credit to DS/DP/RM/OMG/WTF/LOLBBQ for copying Exile code for database saving. Well done you!! Have a gold sticker!
+
+Credit to RyanD(ickhead) for being so stupid and making me lololololol! Moron.
 
 ## License
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)

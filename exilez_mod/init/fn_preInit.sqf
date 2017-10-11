@@ -295,6 +295,19 @@ switch (toLower worldName) do
 		// Trigger Settings
 		call compileFinal preprocessFileLineNumbers "exilez_mod\triggers\maldenTriggerSettings.sqf";
 	};
+	
+	case "chernarusredux":
+	{
+		// Trigger Positions
+		call compileFinal preprocessFileLineNumbers "exilez_mod\triggers\chernarusReduxTriggerPositions.sqf";
+
+		//Loot Crate and Mission Objects
+		EZM_triggerMission = compileFinal preprocessFileLineNumbers "exilez_mod\mission\chernarusReduxZedMission.sqf";
+		EZM_triggerLootCrate = compileFinal preprocessFileLineNumbers "exilez_mod\mission\zMissionLootCrate.sqf";
+
+		// Trigger Settings
+		call compileFinal preprocessFileLineNumbers "exilez_mod\triggers\chernarusReduxTriggerSettings.sqf";
+	};
 
 };
 

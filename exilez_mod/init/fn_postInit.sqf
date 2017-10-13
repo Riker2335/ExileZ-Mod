@@ -352,6 +352,7 @@ if (EZM_UseHorde) then
 };
 
 //Create Triggers
+_zgroupsArray = [];
 if (EZM_UseTriggers) then
 {
 	{
@@ -359,7 +360,7 @@ if (EZM_UseTriggers) then
 		_triggerPositions = _x select 1;
 		if (_useThisTrigger) then
 		{
-		
+			
 			//Weight Zombie Group
 			_currentTrigger = _x;
 			_zgroup = _currentTrigger select 13;
@@ -367,16 +368,29 @@ if (EZM_UseTriggers) then
 			{
 				diag_log format["ExileZ Mod: Compounding Zombie Group Weight, Selected Group Trigger Index : %1",_forEachIndex];
 			};
-			_count = 0;
+			
+			if !(_zgroup in _zgroupsArray) then
 			{
-				_count = _count + (_x select 1);
+				_count = 0;
+				{
+					_count = _count + (_x select 1);
+					if (EZM_Debug) then
+					{
+						diag_log format["ExileZ Mod: Zombie Type Index : %1		Weight : %2		Compound Weight Value : 	%3",_forEachIndex,_x select 1,_count];
+					};
+					(_zgroup select _forEachIndex) set [1,_count];
+				}
+				foreach (_zgroup);
+				
+				_zgroupsArray append [_zgroup];
+			}
+			else
+			{
 				if (EZM_Debug) then
 				{
-					diag_log format["ExileZ Mod: Zombie Type Index : %1		Weight : %2		Compound Weight Value : 	%3",_forEachIndex,_x select 1,_count];
+					diag_log "ExileZ Mod: Compounding Weight For This Zombie Group Already Done!";
 				};
-				(_zgroup select _forEachIndex) set [1,_count];
-			}
-			foreach (_zgroup);
+			};
 
 			//Create triggers
 			{

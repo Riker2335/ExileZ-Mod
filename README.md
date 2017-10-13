@@ -122,7 +122,7 @@ If you feel so inclined, donations can be sent to myself via PayPal donate@Frien
 
 ## Credits
 
-Original code base by Patrix87. Trigger Generator by Second_Coming. Taunus and Chernarus Redux triggers by yukihito23. Chernobyl Zone (and Chernobyl Zone Autumn) triggers by lusu007. Stratis triggers by AKA Tony.
+Original code base by Patrix87. Trigger Generator by Second_Coming. Taunus and Chernarus Redux triggers by yukihito23. Chernobyl Zone (and Chernobyl Zone Autumn) triggers by lusu007. Stratis triggers by AKA Tony. Trigger weighting fix by glam4x.
 
 ## Special Mentions
 

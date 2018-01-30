@@ -51,7 +51,7 @@ if (time < 120) exitWith
 			};
 		}
 		forEach EZM_BlacklistedPositions;	
-		sleep 0.5;
+		uisleep 0.5;
 	};
 	
 	// Not in Traders
@@ -62,7 +62,7 @@ if (time < 120) exitWith
 		{
 			diag_log format["ExileZ Mod: %1 is in a SafeZone, no Harassing Zombie for them.",_playerName];
 		};
-		sleep 0.5;
+		uisleep 0.5;
 	};
 	
 	// Not in Territory
@@ -73,7 +73,7 @@ if (time < 120) exitWith
 		{
 			diag_log format["ExileZ Mod: %1 is in their Territory, no Harassing Zombie for them.",_playerName];
 		};
-		sleep 0.5;
+		uisleep 0.5;
 	};
 	
 	// Roll for Harassing Zombie chance..
@@ -85,7 +85,7 @@ if (time < 120) exitWith
 		{
 			diag_log format["ExileZ Mod: %1 got lucky, no Harassing Zombie for them.",_playerName];
 		};
-		sleep 0.5;
+		uisleep 0.5;
 	};
 
 	if ((EZM_HarassingZombieAtNightOnly && (daytime >= EZM_NightStartTime or daytime < EZM_NightEndTime) && !(_skipPlayer)) || (!(EZM_HarassingZombieAtNightOnly) && !(_skipPlayer))) then 
@@ -101,7 +101,7 @@ if (time < 120) exitWith
 				if (isNull _group) then 
 				{
 					_group = [_playerObj] call EZM_InitGroup;
-					sleep 1;
+					uisleep 1;
 				};
 
 				// Count number of zombie alive in the group
@@ -124,7 +124,7 @@ if (time < 120) exitWith
 								diag_log "ExileZ Mod: Maximum Zombies reached for now!";
 							};
 						};
-						sleep 1;
+						uisleep 1;
 					};
 					
 					if (EZM_ExtendedLogging) then 
@@ -135,6 +135,6 @@ if (time < 120) exitWith
 			};
 		};
 	};
-	sleep 0.5;
+	uisleep 0.5;
 }
 forEach (allPlayers - entities "HeadlessClient_F");

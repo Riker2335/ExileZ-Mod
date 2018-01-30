@@ -4,47 +4,40 @@ ExileZ Mod by [FPS]kuplion - Based on ExileZ 2.0 by Patrix87
 
 */
 
-EZM_Military =            [         
-                            [4298.18,10677.1,400],    //NWA North
-                            [4517.72,10279.4,400],    //NWA Central
-                            [4784.56,9867.63,400],    //NWA South
-                            [11895.7,12774.3,400],    //NEA West
-                            [12120.8,12703.3,400],    //NEA Central
-                            [12379.3,12614.8,400],    //NEA East
-                            [4758.15,2489.38,400],    //BalotaMil West
-                            [4930.58,2391.46,400],    //BalotaMil Central
-                            [5140.26,2269.06,400],    //BalotaMil East
-                            [3725.44,6001.84,300],    //Green Mountain
-                            [14200.7,14113.5,300]    //(CR)North East Military
-                        ];                      
+EZM_Military =            [
+                            [4517.72,10279.4,800],    //NWA Central
+                            [12120.8,12703.3,600],    //NEA Central
+                            [4930.58,2391.46,500],    //BalotaMil Central
+                            [14200.7,14113.5,300],    //(CHR)North East Military
+                            [11458.9,11337.4,300]    //(CHR)Klen Hill *Blacklist or remove this if you have traders here*
+                        ];
 
-EZM_NoBuildings =        [         
+EZM_NoBuildings =        [
+                            [3725.44,6001.84,300],    //Green Mountain
                             [10274.2,12047.9,300],    //Black Mountain
                             [11247.7,4282.75,300],    //Rog
                             [6896.64,11437.2,300],    //Devils Castle
                             [6536.29,5594.81,300],    //Zub
-                            [11466.8,7510.26,300],    //(CR)Factory
-                            [9392.31,2035.91,300],    //(CR)Electro West Suburb
-                            [6223.03,2164.42,300],    //(CR)Chernogorsk West Electric Plant
-                            [5679.22,2979.3,300],    //(CR)Chernogorsk North West Electric Plant
-                            [7110.09,3259.99,300],    //(CR)Vysota East
-                            [6430.37,3725.85,300]    //(CR)Vysota North
-                        ];                  
+                            [11466.8,7510.26,300],    //(CHR)Factory
+                            [9392.31,2035.91,300],    //(CHR)Electro West Suburb
+                            [6223.03,2164.42,300],    //(CHR)Chernogorsk West Electric Plant
+                            [5679.22,2979.3,300],    //(CHR)Chernogorsk North West Electric Plant
+                            [7110.09,3259.99,300],    //(CHR)Vysota East
+                            [6430.37,3725.85,300]    //(CHR)Vysota North
+                        ];
 
-EZM_NoMansLand =        [        
-                            [4504,10333,150]        // No man's land
-                        ];                      
+EZM_NoMansLand =        [
+                            //[4504,10333,150]        // No man's land
+                        ];
 
-EZM_Mission    =            [             
+EZM_Mission    =            [
                             //[4504,10333,150]        // Mission
                         ];
 
-EZM_Cities    =             [
-                            [1909.46,2245.71,300],    //Kamenka
-                            [3642.42,2472.86,300],    //Komorovo
-                            [4499.99,2454.42,300],    //Balota
+EZM_MainCitiesOnly    =    [
+                            [11111.1,12317.6,500],    //Krastnostav
                             [6603.16,2429.36,300],    //Cherno Firestation
-                            [7062.82,2726.40,300],    //Cherno Construction Site
+                            [7062.82,2726.40,500],    //Cherno Construction Site
                             [6501.68,2678.82,300],    //Cherno Factory
                             [10153.3,1976.83,300],    //Elektro West
                             [10483.1,2311.19,300],    //Elektro East
@@ -55,22 +48,29 @@ EZM_Cities    =             [
                             [12732.5,9635.93,300],    //Berezino Lumbermill
                             [12227.9,9468.11,300],    //Berezino North-South
                             [12018.1,9061.24,300],    //Berezino South-West
+                            [13138.5,10597.6,300],    //(CHR)Berezino North Underground Station
                             [7076.81,7685.28,300],    //Novy
                             [6088.33,7752.88,300],    //Stary
-                            [2716.55,5438.23,300],    //Zeleno North-West
-                            [2911.71,5480.03,300],    //Zeleno North-East
+                            [2911.71,5480.03,400],    //Zeleno North
                             [2669.20,5117.12,300],    //Zeleno South
                             [2245.84,5247.34,300],    //Zeleno West
                             [1709.18,5089.06,300],    //Zeleno Far West
-                            [3840.46,8853.16,300],    //Vybor
-                            [8046.44,3296.95,300],    //Prigorodki
+                            [3840.46,8853.16,500],    //Vybor
+                            [10915.1,2706.92,300],    //(CHR)Electro East Harbor
+                            [7158.24,2240.21,300]    //(CHR)Chernogorsk Harbor
+                        ];
+
+EZM_Cities    =             [
+                            [4499.99,2454.42,300],    //Balota
+                            [1909.46,2245.71,300],    //Kamenka
+                            [3642.42,2472.86,300],    //Komorovo
+                            [8046.44,3296.95,500],    //Prigorodki
                             [13503.1,4080.27,300],    //Krutoy Cap
                             [13383.9,5430.58,300],    //Three Valleys East
                             [13353.2,6251.42,300],    //Solichney
-                            [13125.3,7109.88,300],    //Solichney Factory
+                            [12474.1,6234.69,500],    //(CHR)Solichney West
+                            [13125.3,7109.88,400],    //Solichney Factory
                             [12934.7,8225.37,300],    //Nizhnoye
-                            [11111.1,12317.6,300],    //Krastnostav
-                            [11635.1,12398.2,300],    //Krastnostav East
                             [12302.9,10775.6,300],    //Khelm
                             [10436.5,9846.27,300],    //Dubrovka
                             [10293.2,9550.90,300],    //Dubrovka South
@@ -107,38 +107,10 @@ EZM_Cities    =             [
                             [2527.03,6346.84,300],    //Sosnovka
                             [1688.03,3848.96,300],    //Pavlovo
                             [13358.80,12887,300],    //Olsha
-                            [12760.8,4419.17,300],    //(CR)Tulga
-                            [12143.7,7269.84,300],    //(CR)Orlovets
-                            [6621.85,3308.06,300]    //(CR)Vysota
-                        ];                      
-
-EZM_MainCitiesOnly    =    [              
-                            [1909.46,2245.71,300],    //Kamenka
-                            [3642.42,2472.86,300],    //Komorovo
-                            [4499.99,2454.42,300],    //Balota
-                            [6603.16,2429.36,300],    //Cherno Firestation
-                            [7062.82,2726.40,300],    //Cherno Construction Site
-                            [6501.68,2678.82,300],    //Cherno Factory
-                            [10153.3,1976.83,300],    //Elektro West
-                            [10483.1,2311.19,300],    //Elektro East
-                            [10544.5,2148.95,300],    //Elekro South-East
-                            [10454.9,2527.51,300],    //Elektro North
-                            [12024.9,3589.48,300],    //Kamyshovo
-                            [12966.3,10108.2,300],    //Berezino North
-                            [12732.5,9635.93,300],    //Berezino Lumbermill
-                            [12227.9,9468.11,300],    //Berezino North-South
-                            [12018.1,9061.24,300],    //Berezino South-West
-                            [7076.81,7685.28,300],    //Novy
-                            [6088.33,7752.88,300],    //Stary
-                            [2716.55,5438.23,300],    //Zeleno North-West
-                            [2911.71,5480.03,300],    //Zeleno North-East
-                            [2669.20,5117.12,300],    //Zeleno South
-                            [2245.84,5247.34,300],    //Zeleno West
-                            [1709.18,5089.06,300],    //Zeleno Far West
-                            [3840.46,8853.16,300],    //Vybor
-                            [10915.1,2706.92,300],    //(CR)Electro East Harbor
-                            [7158.24,2240.21,300]    //(CR)Chernogorsk Harbor
+                            [12760.8,4419.17,300],    //(CHR)Tulga
+                            [12143.7,7269.84,300],    //(CHR)Orlovets
+                            [6621.85,3308.06,300]    //(CHR)Vysota
                         ];
 
 // Check Config Compiled
-EZM_TriggersCompiledOkay                = true;
+EZM_TriggersCompiledOkay = true;

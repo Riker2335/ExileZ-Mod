@@ -184,7 +184,7 @@ if(_explode) then
 		[_unit] spawn
 		{
 			private _unit = _this select 0;
-			sleep EZM_ExplosionDelay;
+			uisleep EZM_ExplosionDelay;
 			EZM_ExplosiveType createvehicle position _unit;
 		};
 	};

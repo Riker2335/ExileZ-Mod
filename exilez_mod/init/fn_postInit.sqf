@@ -395,7 +395,7 @@ if (EZM_UseTriggers) then
 			//Create triggers
 			{
 				nul = [_x,_CurrentTrigger] spawn EZM_CreateTriggers;
-				sleep 0.01;
+				uisleep 0.01;
 			}foreach (_triggerPositions);
 		};
 	}foreach EZM_Triggers;
@@ -416,7 +416,7 @@ if ((EZM_UseAreaBlacklist) && (EZM_BlacklistExtendTraders)) then
 			EZM_BlacklistedTraders pushBack
 			[
 				getMarkerPos _x, 
-				((getMarkerSize _x) select 0) + EZM_BlacklistExtendDistance
+				((getMarkerSize _x) select 0) + EZM_BlacklistExtendDistance;
 			];
 		};
 	}

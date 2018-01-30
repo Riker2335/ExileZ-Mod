@@ -42,7 +42,7 @@ for "_i" from 1 to 5 do {
 	//Validate location
 	_validLocation = [_TempPosition] call EZM_VerifyLocation;
 	if (_validLocation) exitWith {_validLocation};
-	sleep 0.05;
+	uisleep 0.05;
 };
 _position = _TempPosition;
 

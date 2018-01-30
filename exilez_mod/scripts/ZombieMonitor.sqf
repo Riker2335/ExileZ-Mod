@@ -31,7 +31,7 @@ if (EZM_ExtendedLogging) then
 	if (({isplayer _x} count (_zombiePos nearEntities EZM_MaxDistance) == 0) && alive _zombie) then
 	{
 		//_zombie setdamage 1;
-		//sleep 5;
+		//uisleep 5;
 		deleteVehicle _zombie;
 		EZM_aliveZombies = EZM_aliveZombies - [_zombie];
 	
@@ -45,7 +45,7 @@ if (EZM_ExtendedLogging) then
 	if ((EZM_RemoveZfromTraders) && ((getPosATL _zombie) call ExileClient_util_world_isInTraderZone) && (alive _zombie)) then
 	{
 		//_zombie setdamage 1;
-		//sleep 5;
+		//uisleep 5;
 		deleteVehicle _zombie;
 		EZM_aliveZombies = EZM_aliveZombies - [_zombie];
 	
@@ -59,7 +59,7 @@ if (EZM_ExtendedLogging) then
 	if ((EZM_RemoveZfromTerritory) && ((getPosATL _zombie) call ExileClient_util_world_isInTerritory) && (alive _zombie)) then
 	{
 		//_zombie setdamage 1;
-		//sleep 5;
+		//uisleep 5;
 		deleteVehicle _zombie;
 		EZM_aliveZombies = EZM_aliveZombies - [_zombie];
 	
@@ -78,7 +78,7 @@ if (EZM_ExtendedLogging) then
 			if (_distance <= 30) exitWith 
 			{
 				//_zombie setdamage 1;
-				//sleep 10;
+				//uisleep 10;
 				deleteVehicle _zombie;
 				EZM_aliveZombies = EZM_aliveZombies - [_zombie];
 	
@@ -99,7 +99,7 @@ if (EZM_ExtendedLogging) then
 			if (_distance <= 30) exitWith 
 			{
 				//_zombie setdamage 1;
-				//sleep 10;
+				//uisleep 10;
 				deleteVehicle _zombie;
 				EZM_aliveZombies = EZM_aliveZombies - [_zombie];
 	

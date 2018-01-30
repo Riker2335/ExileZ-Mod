@@ -37,7 +37,7 @@ if (_missionLRadius > 0) then {
 	{
 		_tempTriggerPosition = [_triggerPosition,0,_missionLRadius] call EZM_GetRandomLocation;
 		_validLocation = [_tempTriggerPosition,true] call EZM_VerifyLocation;
-		sleep 0.05;
+		uisleep 0.05;
 	};
 	_triggerPosition = _tempTriggerPosition;
 };

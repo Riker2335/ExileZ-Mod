@@ -4,7 +4,7 @@ ExileZ Mod by [FPS]kuplion - Based on ExileZ 2.0 by Patrix87
 
 */
 
-private ["_nPlayer","_group","_groupSize","_vestGroup","_lootGroup","_zombieGroup","_playerObj","_playerName","_playerPosition","_position","_validLocation","_playerObjs","_sleepTime","_minFrequency","_maxFrequency","_hordeDensity"];
+private ["_nPlayer","_group","_groupSize","_vestGroup","_lootGroup","_zombieGroup","_playerObj","_playerName","_playerPosition","_position","_validLocation","_playerObjs","_uisleepTime","_minFrequency","_maxFrequency","_hordeDensity"];
 
 
 _groupSize =         (_this select 0) select 0;
@@ -48,12 +48,12 @@ if (_nPlayer >= 1) then
 				//Validate location
 				_validLocation = [_position] call EZM_VerifyLocation;
 				if (_validLocation) exitWith {_validLocation};
-				sleep 0.05;
+				uisleep 0.05;
 			};
 		};
 		if (_validLocation) exitWith {_playerObj};
 		_playerObj = ObjNull;
-		sleep 0.05;
+		uisleep 0.05;
 	};
 	
 	//if _playerObj is not null or in a Trader, spawn the horde
@@ -68,7 +68,7 @@ if (_nPlayer >= 1) then
 		if (isNull _group) then 
 		{
 			_group = [_playerObj] call EZM_InitGroup;
-			sleep 1;
+			uisleep 1;
 		};
 
 		//Spawn the horde
@@ -90,7 +90,7 @@ if (_nPlayer >= 1) then
 					diag_log "ExileZ Mod: Maximum Zombies reached for now!";
 				};
 			};
-			sleep 1;
+			uisleep 1;
 		};
 	}
 	else

@@ -81,18 +81,18 @@ while {triggeractivated (_this select 0)} do
 					if (isNull _group) then 
 					{ 											//the zombie group is empty or all dead
 						_group = [_triggerObj] call EZM_InitGroup;
-						sleep 1;
+						uisleep 1;
 					};
 					call EZM_SpawnOne;
 				};
-				sleep _SpawnDelay;								//spawn delay
+				uisleep _SpawnDelay;								//spawn delay
 			};
 			_newAct = false;
 		} 
 		else 													//player probably killed all the zombies without leaving the zone
 		{
 			call EZM_SpawnOne;
-			sleep _RespawnDelay; 								//Wait respawn time
+			uisleep _RespawnDelay; 								//Wait respawn time
 		};
 	}
 	else //group is not empty
@@ -105,7 +105,7 @@ while {triggeractivated (_this select 0)} do
 		{
 			call EZM_SpawnOne;
 		};
-		sleep _RespawnDelay; 									//Wait respawn time
+		uisleep _RespawnDelay; 									//Wait respawn time
 	};
 };
 //Reboot the trigger

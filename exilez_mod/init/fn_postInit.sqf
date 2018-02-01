@@ -416,7 +416,7 @@ if ((EZM_UseAreaBlacklist) && (EZM_BlacklistExtendTraders)) then
 			EZM_BlacklistedTraders pushBack
 			[
 				getMarkerPos _x, 
-				((getMarkerSize _x) select 0) + EZM_BlacklistExtendDistance;
+				((getMarkerSize _x) select 0) + EZM_BlacklistExtendDistance
 			];
 		};
 	}

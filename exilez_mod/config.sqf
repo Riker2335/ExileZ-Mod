@@ -58,6 +58,7 @@ EZM_CqbBonus						= 40;				// Respect for close quarter bonus at 1 meter
 EZM_DistanceBonusDivider			= 10;				// Distance divided by that number = respect E.G. 300m / [20] = 15 Respect
 
 // Zombie settings : SET TO -1 TO DISABLE AND USE DEFAULT FROM RYANZOMBIES
+EZM_ryanzombieglowingeyes				  = -1;		 // Glowing Eyes
 EZM_ryanzombieshealth			          = 0.8; 	 // Health, *(initial damage level 0 is no damage 1 is dead)
 EZM_ryanzombieshealthdemon                = 0.5;	 // Health, *(initial damage level 0 is no damage 1 is dead)
 EZM_ryanzombiesattackspeed 	              = 1.5;	 // Attack speed, *(Time is seconds between attacks)

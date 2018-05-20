@@ -5,6 +5,12 @@ ExileZ Mod by [FPS]kuplion - Based on ExileZ 2.0 by Patrix87
 */
 
 // Set Ryanzombies public variables
+if (EZM_Ryanzombiesdamagecaliberneeded > 0) then 
+{
+	Ryanzombiesdamagecaliberneeded = EZM_Ryanzombiesdamagecaliberneeded;
+	publicVariable "Ryanzombiesdamagecaliberneeded";
+};
+
 if (EZM_ryanzombieglowingeyes >= 0) then 
 {
 	Ryanzombiesglow = EZM_ryanzombieglowingeyes;

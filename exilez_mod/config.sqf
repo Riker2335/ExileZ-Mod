@@ -10,7 +10,7 @@ EZM_ExtendedLogging					= true;				// Slightly more information in logs.
 
 // Global Settings
 EZM_MaxZombies						= 100;				// How many Zombies overall?
-EZM_ZombieSide						= EAST;             // zombie team side east, west and Civilian can be used.
+EZM_ZombieSide						= WEST;             // zombie team side east, west and Civilian can be used.
 EZM_MinSpawnDistance				= 20;               // Closest distance from any player to spawn a zombie.
 EZM_MaxSpawnDistance				= 100;              // Max distance a zombie should spawn from a player.
 EZM_MaxDistance						= 300;              // Max distance to players before delete.

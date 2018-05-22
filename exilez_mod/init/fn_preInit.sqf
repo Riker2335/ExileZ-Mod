@@ -308,6 +308,20 @@ switch (toLower worldName) do
 		// Trigger Settings
 		call compileFinal preprocessFileLineNumbers "exilez_mod\triggers\chernarusReduxTriggerSettings.sqf";
 	};
+	
+	case "abramia":
+	{
+		// Trigger Positions
+		call compileFinal preprocessFileLineNumbers "exilez_mod\triggers\abramiaTriggerPositions.sqf";
+
+		//Loot Crate and Mission Objects
+		triggerMission = compileFinal preprocessFileLineNumbers "exilez_mod\mission\defaultZedMission.sqf";
+		triggerLootCrate = compileFinal preprocessFileLineNumbers "exilez_mod\mission\zMissionLootCrate.sqf";
+
+		// Trigger Settings
+		call compileFinal preprocessFileLineNumbers "exilez_mod\triggers\abramiaTriggerSettings.sqf";
+	};
+	
 
 };
 

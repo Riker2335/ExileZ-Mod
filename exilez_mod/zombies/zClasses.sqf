@@ -46,7 +46,7 @@ EZM_MediumMix = [
 ];
 
 EZM_MediumMil = [
-[EZM_walkerSoldiers,	50],
+[EZM_walkerSoldiers,	70],
 [EZM_slowSoldiers,		50],
 [EZM_mediumSoldiers,	5],
 [EZM_fastSoldiers,		3],
@@ -55,12 +55,12 @@ EZM_MediumMil = [
 ];
 
 EZM_MediumCiv = [
-[EZM_walkerCivilians,	50],
-[EZM_slowCivilians,		50],
+[EZM_walkerCivilians,	70],
+[EZM_slowCivilians,		70],
 [EZM_mediumCivilians,	5],
-[EZM_fastCivilians,		2],
+[EZM_fastCivilians,		1],
 [EZM_crawlers,			5],
-[EZM_spiders,			5]
+[EZM_spiders,			3]
 ];
 
 EZM_Hard = [
@@ -77,8 +77,8 @@ EZM_Hard = [
 ];
 
 EZM_Hardcore = [
-[EZM_mediumCivilians,	10],
-[EZM_mediumSoldiers,	10],
+[EZM_mediumCivilians,	20],
+[EZM_mediumSoldiers,	20],
 [EZM_fastCivilians,	    15],
 [EZM_fastSoldiers,	    15],
 [EZM_crawlers,		    1],

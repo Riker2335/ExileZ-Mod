@@ -17,9 +17,9 @@ Trigger_1 = [				 //Cities
 /* 8  MarkerBrush */         "Solid",            // "Solid","SolidFull","Horizontal","Vertical","Grid","FDiagonal","BDiagonal","DiagGrid","Cross","Border","SolidBorder"
 /* 9  Marker Alpha */        0.2,                // Alpha of the trigger *(0 is invisible 1 is opaque)
 /* 10 Marker Text */         "",                 // The text on the trigger
-/* 11 Vest group */          VeryBasic,          // The name of the Array used to list all the possible vest for that trigger. ZVest.sqf
-/* 12 Loot group */          Useful,             // The name of the Array used to list all the possible loot for that trigger. ZLoot.sqf
-/* 13 Zombie group */        MediumCiv,          // The name of the Group used to list the zombies possible for that trigger.  ZClasses.sqf
+/* 11 Vest group */          EZM_VeryBasic,      // The name of the Array used to list all the possible vest for that trigger. ZVest.sqf
+/* 12 Loot group */          EZM_Useful,         // The name of the Array used to list all the possible loot for that trigger. ZLoot.sqf
+/* 13 Zombie group */        EZM_MediumCiv,      // The name of the Group used to list the zombies possible for that trigger.  ZClasses.sqf
 /* 14 Mission Radius */      0,                  // Up to how far from the center of the trigger the mission LOOT can spawn.
 /* 15 Mission SQF */         nil,                // The location of the Mission file related to that trigger *(use M3Editor to create the file.) THIS IS STATIC AND WILL NOT MOVE WITH THE TRIGGER
 /* 16 Loot Box */            nil                 // The location of the Missionloot file related to that trigger *(See example file zmissionloot.sqf)
@@ -37,9 +37,9 @@ Trigger_2 = [				 //Military
 /* 8  MarkerBrush */         "Solid",            
 /* 9  Marker Alpha */        0.2,                
 /* 10 Marker Text */         "",                 
-/* 11 Vest group */          Military,              
-/* 12 Loot group */          Useful,             
-/* 13 Zombie group */        MediumMil,         
+/* 11 Vest group */          EZM_Military,              
+/* 12 Loot group */          EZM_Useful,             
+/* 13 Zombie group */        EZM_MediumMil,         
 /* 14 Mission Radius */      0,                  
 /* 15 Mission SQF */         nil,                
 /* 16 Loot Box */            nil                 
@@ -57,9 +57,9 @@ Trigger_3 = [				 //Towns
 /* 8  MarkerBrush */         "Solid",            
 /* 9  Marker Alpha */        0.2,                
 /* 10 Marker Text */         "",                 
-/* 11 Vest group */          Nothing,              
-/* 12 Loot group */          Useful,             
-/* 13 Zombie group */        Easy,
+/* 11 Vest group */          EZM_Nothing,              
+/* 12 Loot group */          EZM_Useful,             
+/* 13 Zombie group */        EZM_Easy,
 /* 14 Mission Radius */      0,                  
 /* 15 Mission SQF */         nil,                
 /* 16 Loot Box */            nil                 
@@ -77,9 +77,9 @@ Trigger_4 = [				 //Berg - Mountains
 /* 8  MarkerBrush */         "Solid",            
 /* 9  Marker Alpha */        0.2,                
 /* 10 Marker Text */         "",                 
-/* 11 Vest group */          Basic,              
-/* 12 Loot group */          Useful,             
-/* 13 Zombie group */        MediumMix,
+/* 11 Vest group */          EZM_Basic,              
+/* 12 Loot group */          EZM_Useful,             
+/* 13 Zombie group */        EZM_MediumMix,
 /* 14 Mission Radius */      0,                  
 /* 15 Mission SQF */         nil,                
 /* 16 Loot Box */            nil                 
@@ -97,9 +97,9 @@ Trigger_5 = [				 //Mission Trigger
 /* 8  MarkerBrush */         "Solid",            
 /* 9  Marker Alpha */        0.5,                
 /* 10 Marker Text */         "LOOT & DEATH",     
-/* 11 Vest group */          Basic,              
-/* 12 Loot group */          DocAndAmmo,         
-/* 13 Zombie group */        Hard, 
+/* 11 Vest group */          EZM_Basic,              
+/* 12 Loot group */          EZM_DocAndAmmo,         
+/* 13 Zombie group */        EZM_Hard, 
 /* 14 Mission Radius */      10,               
 /* 15 Mission SQF */         nil,    
 /* 16 Loot Box */            triggerLootCrate     
@@ -117,9 +117,9 @@ Trigger_6 = [				 //Airports
 /* 8  MarkerBrush */         "Solid",            
 /* 9  Marker Alpha */        0.2,                
 /* 10 Marker Text */         "",                 
-/* 11 Vest group */          Basic,              
-/* 12 Loot group */          Useful,             
-/* 13 Zombie group */        MediumMil,
+/* 11 Vest group */          EZM_Basic,              
+/* 12 Loot group */          EZM_Useful,             
+/* 13 Zombie group */        EZM_MediumMil,
 /* 14 Mission Radius */      0,                  
 /* 15 Mission SQF */         nil,                
 /* 16 Loot Box */            nil                 
@@ -137,9 +137,9 @@ Trigger_7 = [				 // Asylum Mission Trigger
 /* 8  MarkerBrush */         "Solid",            
 /* 9  Marker Alpha */        0.5,                
 /* 10 Marker Text */         "",     
-/* 11 Vest group */          Basic,              
-/* 12 Loot group */          DocAndAmmo,         
-/* 13 Zombie group */        Hard, 
+/* 11 Vest group */          EZM_Basic,              
+/* 12 Loot group */          EZM_DocAndAmmo,         
+/* 13 Zombie group */        EZM_Hard, 
 /* 14 Mission Radius */      10,               
 /* 15 Mission SQF */         nil,    
 /* 16 Loot Box */            nil     
